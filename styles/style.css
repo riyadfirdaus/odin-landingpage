@@ -1,18 +1,28 @@
 *{
-    font-family: 'Roboto','Times New Roman', serif;
-    border:#c52722;
-    
+    font-family: 'Roboto','Times New Roman', 'serif';
 }
 html, body {
     margin: 0;
     padding: 0;
-}  
+}
+
+.button{
+    transition-duration: 0.4s;
+}
+.button:hover{
+    color:#3882f6;
+    background-color: white;
+}
+
+section{
+    padding: 20px 240px;
+}
 body{
     display: flex;
     flex-direction: column;
 }
 .navbar{
-    padding:0px 80px;
+    padding:0px 240px;
     display:flex;
     flex-flow: row wrap;
     align-items: center;
@@ -39,28 +49,33 @@ ul {
 }
 
 .hero{
-    padding:20px 80px 40px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex:auto;
     background-color: #1F2937;
 }
+
+.hero-media{
+    justify-content: flex-end;
+    flex-shrink: 1;
+}
+
+.hero-media img{
+    width: 100%; height: auto;
+}
 .hero-main{
     display: flex;
+    flex: 1;
     flex-flow: column wrap;
     justify-content: space-between;
-    text-align: left;
+    text-align:justify;
     flex-basis: 300px;
     margin-right: 50px;
 }
 .hero p{
     font-size:18px;
-    color:#e5e7eb;
-}
-
-.hero-media img{
-    max-width: 100%;
+    color: #e5e7eb;
 }
 
 .hero button{
@@ -89,7 +104,6 @@ h1{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 80px;
 }
 .info header{
     text-align: center;
@@ -122,7 +136,61 @@ h1{
 
 .quote{
     display: flex;
-    flex-flow:column;
+    flex-flow: column;
     justify-content: center;
-    padding: 20px 80px;
+    padding: 40px 240px;
+    background-color: #e5e7eb; 
+    flex: auto;
+}
+
+.quote p{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    color:#1F2937;
+    flex: auto;
+    flex-wrap: wrap;
+}
+.quote .quoter{
+    font-size: large;
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container{
+    padding: 60px 240px;
+}
+.banner{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3882f6;
+    flex:auto;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.banner button{
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Roboto', arial;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+footer{
+    background-color: #1F2937;
+    color: #fff;
+    text-align: center;
 }
