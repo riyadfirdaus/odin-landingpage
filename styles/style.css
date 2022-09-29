@@ -15,14 +15,14 @@ html, body {
 }
 
 section{
-    padding: 20px 240px;
+    padding: 20px 200px;
 }
 body{
     display: flex;
     flex-direction: column;
 }
 .navbar{
-    padding:0px 240px;
+    padding:0px 200px;
     display:flex;
     flex-flow: row wrap;
     align-items: center;
